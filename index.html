@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Veil & Vogue - Discover modern, elegant modest fashion styling. Curated outfit inspiration for College Wear, Casual Chic, Old Money, and Ethnic Fusion.">
+  <meta name="keywords" content="modest fashion, modest styling, Veil and Vogue, outfit inspiration, old money modest, casual chic, ethnic fusion, college outfits">
+  <meta name="author" content="Veil & Vogue">
+  <title>Veil & Vogue | Modest Fashion Styling & Outfit Inspiration</title>
+
+  <!-- Google Fonts: Cormorant Garamond (Editorial Serif) & Plus Jakarta Sans (Clean Modern Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>✨</text></svg>">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <aside class="announcement-bar" aria-label="Announcement">
+    <div class="container announcement-content">
+      <span>✦ Autumn / Winter Styling Edit: Discover Warm Ivory & Cocoa Layering Formulas ✦</span>
+    </div>
+  </aside>
+
+  <!-- Main Navigation Bar -->
+  <header class="site-header" id="header">
+    <div class="container nav-wrapper">
+      <!-- Logo -->
+      <a href="#home" class="brand-logo" aria-label="Veil & Vogue Home">
+        <span class="logo-text">Veil <span class="logo-ampersand">&</span> Vogue</span>
+        <span class="logo-tagline">Modest Fashion Studio</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#home" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#style-me" class="nav-link">Style Me</a>
+          </li>
+          <li class="nav-item">
+            <a href="#outfit-ideas" class="nav-link">Outfit Ideas</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions (Saved Moodboard Counter & CTA) -->
+      <div class="nav-actions">
+        <button class="saved-counter-btn" id="open-saved-btn" aria-label="View Saved Outfits">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+          <span class="saved-count-badge" id="saved-badge">0</span>
+        </button>
+
+        <a href="#style-me" class="btn btn-outline btn-nav-cta">Style Me</a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    
+    <!-- Hero Section -->
+    <section class="hero-section" id="home" aria-label="Hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-pill-tag">
+            <span class="pill-sparkle">✦</span> Curated Modest Styling Studio
+          </div>
+          <h1 class="hero-title">
+            Modesty Meets Your <span class="highlight-serif">Personal Style</span>
+          </h1>
+          <p class="hero-subtitle">
+            Discover outfits that express your personality while respecting your comfort and style preferences.
+          </p>
+          
+          <div class="hero-actions">
+            <a href="#style-me" class="btn btn-primary" id="hero-find-style-btn">
+              <span>Find My Style</span>
+              <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+            <a href="#outfit-ideas" class="btn btn-secondary">
+              <span>Explore Outfits</span>
+            </a>
+          </div>
+
+          <!-- Hero Value Highlights -->
+          <div class="hero-perks">
+            <div class="perk-item">
+              <span class="perk-number">100+</span>
+              <span class="perk-label">Modest Formulas</span>
+            </div>
+            <div class="perk-divider" aria-hidden="true"></div>
+            <div class="perk-item">
+              <span class="perk-number">100%</span>
+              <span class="perk-label">Comfort Focused</span>
+            </div>
+            <div class="perk-divider" aria-hidden="true"></div>
+            <div class="perk-item">
+              <span class="perk-number">4 Styles</span>
+              <span class="perk-label">Signature Vibes</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Showcase -->
+        <div class="hero-visual">
+          <div class="hero-image-card">
+            <div class="hero-image-wrapper">
+              <img 
+                src="assets/hero-fashion.jpg" 
+                alt="Veil & Vogue signature modest styling: elegant ivory tailored coat, chocolate brown skirt, and dusty pink silk hijab" 
+                class="hero-img"
+                loading="eager"
+              >
+            </div>
+
+            <!-- Floating Pinterest-style Badges -->
+            <div class="floating-badge badge-top-right">
+              <span class="badge-icon">🤎</span>
+              <div class="badge-text">
+                <span class="badge-title">Cocoa & Dusty Rose</span>
+                <span class="badge-sub">Trending Palette</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom-left">
+              <span class="badge-icon">✨</span>
+              <div class="badge-text">
+                <span class="badge-title">Tailored Silhouette</span>
+                <span class="badge-sub">Effortless Layering</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Color Palette Harmony Showcase Bar -->
+    <section class="palette-strip" aria-label="Veil & Vogue Palette Harmony">
+      <div class="container palette-strip-container">
+        <span class="palette-strip-title">Our Signature Aesthetic Palette:</span>
+        <div class="palette-swatches">
+          <div class="swatch-item">
+            <span class="swatch-circle swatch-cream" aria-hidden="true"></span>
+            <span class="swatch-name">Cream</span>
+          </div>
+          <div class="swatch-item">
+            <span class="swatch-circle swatch-ivory" aria-hidden="true"></span>
+            <span class="swatch-name">Ivory</span>
+          </div>
+          <div class="swatch-item">
+            <span class="swatch-circle swatch-dusty-pink" aria-hidden="true"></span>
+            <span class="swatch-name">Dusty Pink</span>
+          </div>
+          <div class="swatch-item">
+            <span class="swatch-circle swatch-chocolate" aria-hidden="true"></span>
+            <span class="swatch-name">Chocolate Brown</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Style Me Interactive Studio Section -->
+    <section class="style-me-section" id="style-me" aria-labelledby="style-me-title">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Interactive Styling Studio</span>
+          <h2 class="section-title" id="style-me-title">Find Your Personalized Modest Style</h2>
+          <p class="section-subtitle">
+            Answer 3 quick preferences and let our stylist formula curate an effortlessly chic, modest look tailored for you.
+          </p>
+        </div>
+
+        <div class="styling-studio-card">
+          <!-- Quiz Controls -->
+          <form class="style-form" id="style-form" onsubmit="event.preventDefault();">
+            
+            <!-- Step 1: Vibe -->
+            <div class="form-step">
+              <label class="step-label">
+                <span class="step-number">01</span>
+                <span class="step-title">Choose Your Style Vibe</span>
+              </label>
+              <div class="options-grid" role="radiogroup" aria-label="Style Vibe">
+                <button type="button" class="option-pill active" data-group="vibe" data-value="casual-chic">
+                  <span class="option-emoji">☕</span>
+                  <span class="option-text">Casual Chic</span>
+                </button>
+                <button type="button" class="option-pill" data-group="vibe" data-value="old-money">
+                  <span class="option-emoji">🏛️</span>
+                  <span class="option-text">Old Money</span>
+                </button>
+                <button type="button" class="option-pill" data-group="vibe" data-value="college-wear">
+                  <span class="option-emoji">📚</span>
+                  <span class="option-text">College Wear</span>
+                </button>
+                <button type="button" class="option-pill" data-group="vibe" data-value="ethnic-fusion">
+                  <span class="option-emoji">🪷</span>
+                  <span class="option-text">Ethnic Fusion</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 2: Occasion -->
+            <div class="form-step">
+              <label class="step-label">
+                <span class="step-number">02</span>
+                <span class="step-title">What is the Occasion?</span>
+              </label>
+              <div class="options-grid" role="radiogroup" aria-label="Occasion">
+                <button type="button" class="option-pill active" data-group="occasion" data-value="daily">
+                  <span class="option-emoji">🌿</span>
+                  <span class="option-text">Everyday / Casual</span>
+                </button>
+                <button type="button" class="option-pill" data-group="occasion" data-value="brunch">
+                  <span class="option-emoji">🥐</span>
+                  <span class="option-text">Brunch & Outings</span>
+                </button>
+                <button type="button" class="option-pill" data-group="occasion" data-value="campus">
+                  <span class="option-emoji">🎓</span>
+                  <span class="option-text">Campus & Study</span>
+                </button>
+                <button type="button" class="option-pill" data-group="occasion" data-value="soiree">
+                  <span class="option-emoji">🕯️</span>
+                  <span class="option-text">Evening Soirée</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 3: Color Palette Focus -->
+            <div class="form-step">
+              <label class="step-label">
+                <span class="step-number">03</span>
+                <span class="step-title">Select Color Harmony</span>
+              </label>
+              <div class="options-grid" role="radiogroup" aria-label="Color Palette">
+                <button type="button" class="option-pill active" data-group="palette" data-value="dusty-rose">
+                  <span class="color-dot dot-rose"></span>
+                  <span class="option-text">Dusty Pink & Ivory</span>
+                </button>
+                <button type="button" class="option-pill" data-group="palette" data-value="chocolate-cream">
+                  <span class="color-dot dot-choco"></span>
+                  <span class="option-text">Chocolate & Cream</span>
+                </button>
+                <button type="button" class="option-pill" data-group="palette" data-value="champagne-gold">
+                  <span class="color-dot dot-gold"></span>
+                  <span class="option-text">Warm Ivory & Gold</span>
+                </button>
+                <button type="button" class="option-pill" data-group="palette" data-value="earthy-taupe">
+                  <span class="color-dot dot-taupe"></span>
+                  <span class="option-text">Mocha & Rose Taupe</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Actions -->
+            <div class="studio-actions">
+              <button type="button" class="btn btn-primary" id="generate-style-btn">
+                <span>Generate Curated Look</span>
+                <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+              </button>
+              <button type="button" class="btn btn-outline" id="surprise-me-btn">
+                <span>Surprise Me 🎲</span>
+              </button>
+            </div>
+          </form>
+
+          <!-- Interactive Results Display -->
+          <div class="style-result-wrapper" id="style-result-wrapper" aria-live="polite">
+            <div class="result-card">
+              <div class="result-header">
+                <span class="result-badge" id="result-badge">✨ Your Curated Formula</span>
+                <h3 class="result-title" id="result-title">The Effortless Parisian Duster</h3>
+                <p class="result-description" id="result-desc">
+                  An ivory fluid linen trench styled gracefully over dusty rose knitwear and high-waist relaxed trousers. Finished with a soft cocoa scarf and loafers.
+                </p>
+              </div>
+
+              <!-- Breakdown Grid -->
+              <div class="result-breakdown">
+                <div class="breakdown-item">
+                  <span class="breakdown-label">Outerwear & Layer</span>
+                  <strong class="breakdown-value" id="result-outerwear">Fluid Ivory Linen Trench Coat</strong>
+                </div>
+                <div class="breakdown-item">
+                  <span class="breakdown-label">Base Silhouette</span>
+                  <strong class="breakdown-value" id="result-base">Dusty Rose Fine Knit & Pleated Trousers</strong>
+                </div>
+                <div class="breakdown-item">
+                  <span class="breakdown-label">Veil / Hijab Drape</span>
+                  <strong class="breakdown-value" id="result-veil">Soft Mocha Brown Modal Wrap</strong>
+                </div>
+                <div class="breakdown-item">
+                  <span class="breakdown-label">Footwear & Accent</span>
+                  <strong class="breakdown-value" id="result-acc">Chocolate Loafers & Gold Coin Locket</strong>
+                </div>
+              </div>
+
+              <div class="result-footer">
+                <div class="stylist-tip">
+                  <span class="tip-icon">💡</span>
+                  <span class="tip-text" id="result-tip">
+                    <strong>Stylist Note:</strong> Keep the silhouette fluid by tucking in your inner layer lightly to define proportions while maintaining full modesty.
+                  </span>
+                </div>
+                <button type="button" class="btn btn-secondary btn-save-look" id="save-result-btn">
+                  <svg class="heart-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                  </svg>
+                  <span>Save to Moodboard</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Outfit Inspiration Section -->
+    <section class="outfits-section" id="outfit-ideas" aria-labelledby="outfits-title">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-tag">Curated Collections</span>
+          <h2 class="section-title" id="outfits-title">Outfit Inspiration</h2>
+          <p class="section-subtitle">
+            Explore our signature modest aesthetics: College Wear, Casual Chic, Old Money, and Ethnic Fusion.
+          </p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="outfit-filters" role="tablist" aria-label="Outfit Categories">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Aesthetics</button>
+          <button class="filter-btn" data-filter="college" role="tab" aria-selected="false">College Wear</button>
+          <button class="filter-btn" data-filter="casual" role="tab" aria-selected="false">Casual Chic</button>
+          <button class="filter-btn" data-filter="old-money" role="tab" aria-selected="false">Old Money</button>
+          <button class="filter-btn" data-filter="ethnic" role="tab" aria-selected="false">Ethnic Fusion</button>
+        </div>
+
+        <!-- Cards Grid -->
+        <div class="outfits-grid">
+          
+          <!-- Card 1: College Wear -->
+          <article class="outfit-card" data-category="college" id="card-college-wear">
+            <div class="card-media">
+              <img 
+                src="assets/college-wear.jpg" 
+                alt="Modest College Wear: oversized cream blazer, wide-leg trousers, dusty rose hijab, and canvas tote bag" 
+                class="card-img"
+                loading="lazy"
+              >
+              <div class="card-overlay-actions">
+                <button class="card-like-btn" aria-label="Save College Wear outfit" data-id="college-wear">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                  </svg>
+                </button>
+              </div>
+              <span class="card-category-tag">College Wear</span>
+            </div>
+            
+            <div class="card-content">
+              <div class="card-palette-mini" title="Color palette: Cream, Dusty Pink, Khaki, Chocolate">
+                <span class="mini-swatch swatch-cream"></span>
+                <span class="mini-swatch swatch-dusty-pink"></span>
+                <span class="mini-swatch swatch-khaki"></span>
+                <span class="mini-swatch swatch-chocolate"></span>
+              </div>
+              <h3 class="card-title">The Tailored Campus Minimalist</h3>
+              <p class="card-desc">
+                Relaxed cream blazer paired with comfortable wide-leg khaki trousers, a breathable dusty rose chiffon hijab, and pristine white trainers for effortless lecture halls & library sessions.
+              </p>
+              
+              <div class="card-tags">
+                <span class="tag">#CampusChic</span>
+                <span class="tag">#ComfortFirst</span>
+                <span class="tag">#Layered</span>
+              </div>
+
+              <div class="card-footer">
+                <button class="btn-card-link open-modal-btn" data-modal="college">
+                  <span>View Style Formula</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Casual Chic -->
+          <article class="outfit-card" data-category="casual" id="card-casual-chic">
+            <div class="card-media">
+              <img 
+                src="assets/casual-chic.jpg" 
+                alt="Modest Casual Chic outfit: flowing ivory trench coat, dusty rose top, mocha brown scarf, terrace cafe setting" 
+                class="card-img"
+                loading="lazy"
+              >
+              <div class="card-overlay-actions">
+                <button class="card-like-btn" aria-label="Save Casual Chic outfit" data-id="casual-chic">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                  </svg>
+                </button>
+              </div>
+              <span class="card-category-tag">Casual Chic</span>
+            </div>
+            
+            <div class="card-content">
+              <div class="card-palette-mini" title="Color palette: Ivory, Dusty Pink, Chocolate Mocha">
+                <span class="mini-swatch swatch-ivory"></span>
+                <span class="mini-swatch swatch-dusty-pink"></span>
+                <span class="mini-swatch swatch-chocolate"></span>
+              </div>
+              <h3 class="card-title">The Parisian Linen Duster</h3>
+              <p class="card-desc">
+                An airy ivory trench duster layered softly over a dusty rose knit and wide-leg trousers. Finished with mocha loafers and a delicate scarf drape for Sunday coffee runs.
+              </p>
+              
+              <div class="card-tags">
+                <span class="tag">#EverydayLinen</span>
+                <span class="tag">#CoffeeDate</span>
+                <span class="tag">#Effortless</span>
+              </div>
+
+              <div class="card-footer">
+                <button class="btn-card-link open-modal-btn" data-modal="casual">
+                  <span>View Style Formula</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Old Money -->
+          <article class="outfit-card" data-category="old-money" id="card-old-money">
+            <div class="card-media">
+              <img 
+                src="assets/old-money.jpg" 
+                alt="Modest Old Money aesthetic: cream pleated trousers, rich chocolate cashmere sweater drape, ivory blouse" 
+                class="card-img"
+                loading="lazy"
+              >
+              <div class="card-overlay-actions">
+                <button class="card-like-btn" aria-label="Save Old Money outfit" data-id="old-money">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                  </svg>
+                </button>
+              </div>
+              <span class="card-category-tag">Old Money</span>
+            </div>
+            
+            <div class="card-content">
+              <div class="card-palette-mini" title="Color palette: Cream, Chocolate Brown, Pearl White">
+                <span class="mini-swatch swatch-ivory"></span>
+                <span class="mini-swatch swatch-cream"></span>
+                <span class="mini-swatch swatch-chocolate"></span>
+              </div>
+              <h3 class="card-title">The Heritage Cashmere Drape</h3>
+              <p class="card-desc">
+                High-waist cream double-pleated trousers with an ivory silk button-down and a rich chocolate brown cashmere sweater draped effortlessly over the shoulders with timeless pearl studs.
+              </p>
+              
+              <div class="card-tags">
+                <span class="tag">#QuietLuxury</span>
+                <span class="tag">#TimelessElegance</span>
+                <span class="tag">#ClassicTailoring</span>
+              </div>
+
+              <div class="card-footer">
+                <button class="btn-card-link open-modal-btn" data-modal="old-money">
+                  <span>View Style Formula</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: Ethnic Fusion -->
+          <article class="outfit-card" data-category="ethnic" id="card-ethnic-fusion">
+            <div class="card-media">
+              <img 
+                src="assets/ethnic-fusion.jpg" 
+                alt="Modest Ethnic Fusion outfit: dusty rose embroidered kurta, ivory palazzo trousers, sheer organza dupatta drape" 
+                class="card-img"
+                loading="lazy"
+              >
+              <div class="card-overlay-actions">
+                <button class="card-like-btn" aria-label="Save Ethnic Fusion outfit" data-id="ethnic-fusion">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                  </svg>
+                </button>
+              </div>
+              <span class="card-category-tag">Ethnic Fusion</span>
+            </div>
+            
+            <div class="card-content">
+              <div class="card-palette-mini" title="Color palette: Dusty Rose, Champagne Gold, Pure Ivory">
+                <span class="mini-swatch swatch-dusty-pink"></span>
+                <span class="mini-swatch swatch-gold"></span>
+                <span class="mini-swatch swatch-ivory"></span>
+              </div>
+              <h3 class="card-title">The Contemporary Organza Fusion</h3>
+              <p class="card-desc">
+                An intricately embroidered dusty rose straight kurta complemented by crisp ivory palazzo pants and a sheer golden-hemmed organza dupatta drape. A perfect blend of heritage and modern modesty.
+              </p>
+              
+              <div class="card-tags">
+                <span class="tag">#ModernEthnic</span>
+                <span class="tag">#OrganzaDrape</span>
+                <span class="tag">#FestiveModest</span>
+              </div>
+
+              <div class="card-footer">
+                <button class="btn-card-link open-modal-btn" data-modal="ethnic">
+                  <span>View Style Formula</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Modest Styling Rules / Pinterest Inspiration Carousel Bar -->
+    <section class="styling-rules-section" aria-label="Styling Principles">
+      <div class="container">
+        <div class="rules-card-grid">
+          
+          <div class="rule-card">
+            <div class="rule-icon">📐</div>
+            <h4 class="rule-title">The 1/3 Layering Rule</h4>
+            <p class="rule-text">
+              Balance volume by pairing loose duster coats or kimonos with structured high-waist straight bottoms to create elongation.
+            </p>
+          </div>
+
+          <div class="rule-card">
+            <div class="rule-icon">🕊️</div>
+            <h4 class="rule-title">Fabric Breathability</h4>
+            <p class="rule-text">
+              Choose natural premium fibers: mulberry silk, modal wraps, and breathable organic cotton to stay cool and comfortable all day.
+            </p>
+          </div>
+
+          <div class="rule-card">
+            <div class="rule-icon">🎨</div>
+            <h4 class="rule-title">Tonal Color Blocking</h4>
+            <p class="rule-text">
+              Stick to 2-3 hues within the same family (cream, dusty rose, cocoa) to achieve an expensive, effortless Pinterest-curated look.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about" aria-labelledby="about-title">
+      <div class="container about-container">
+        
+        <div class="about-visual">
+          <div class="about-image-wrapper">
+            <img 
+              src="assets/about-atelier.jpg" 
+              alt="Veil & Vogue styling atelier moodboard with silk swatches, gold accessories, and vintage sketches" 
+              class="about-img"
+              loading="lazy"
+            >
+          </div>
+          <div class="about-quote-box">
+            <span class="quote-mark">“</span>
+            <p class="quote-text">Modesty is not about hiding; it is about revealing your dignity and refined elegance on your own terms.</p>
+            <span class="quote-author">— Veil & Vogue Atelier</span>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <span class="section-tag">About Our Atelier</span>
+          <h2 class="section-title" id="about-title">Grace in Every Thread, Confidence in Every Silhouette</h2>
+          
+          <p class="about-text">
+            <strong>Veil & Vogue</strong> was born from a simple belief: modesty and high fashion are not opposites—they are natural companions. We empower women to cultivate an aesthetic wardrobe that aligns with their personal values, lifestyle, and unique sense of grace.
+          </p>
+
+          <p class="about-text">
+            Whether you are curating everyday college outfits, dressing for boardrooms, or styling celebrations, our philosophy blends soft earthy tones—cream, ivory, dusty pink, and rich chocolate—with thoughtful layering that feels effortlessly chic.
+          </p>
+
+          <!-- Core Values -->
+          <div class="about-values-list">
+            <div class="value-item">
+              <div class="value-icon">✦</div>
+              <div>
+                <h4 class="value-name">Uncompromising Comfort</h4>
+                <p class="value-desc">No pinching, no restrictive cuts. Beautiful draping made for real movement.</p>
+              </div>
+            </div>
+
+            <div class="value-item">
+              <div class="value-icon">✦</div>
+              <div>
+                <h4 class="value-name">Timeless Capsule Formulas</h4>
+                <p class="value-desc">Investment-worthy color palettes and pieces that seamlessly mix and match.</p>
+              </div>
+            </div>
+
+            <div class="value-item">
+              <div class="value-icon">✦</div>
+              <div>
+                <h4 class="value-name">Cultural & Modern Harmony</h4>
+                <p class="value-desc">Celebrating heritage silhouettes through clean, contemporary editorial styling.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-cta-wrapper">
+            <a href="#style-me" class="btn btn-primary">Find Your Style Formula</a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Newsletter / Vogue Circle Section -->
+    <section class="newsletter-section" aria-label="Join the Vogue Circle">
+      <div class="container text-center">
+        <div class="newsletter-card">
+          <span class="newsletter-sparkle">✦ ✦ ✦</span>
+          <h3 class="newsletter-title">Join The Vogue Circle</h3>
+          <p class="newsletter-desc">
+            Receive weekly modest styling moodboards, fabric care guides, and exclusive palette pairings directly to your inbox.
+          </p>
+          <form class="newsletter-form" id="newsletter-form" onsubmit="event.preventDefault();">
+            <input 
+              type="email" 
+              class="newsletter-input" 
+              id="newsletter-email" 
+              placeholder="Enter your email address..." 
+              required
+              aria-label="Email for newsletter"
+            >
+            <button type="submit" class="btn btn-primary btn-newsletter">Subscribe</button>
+          </form>
+          <p class="newsletter-success-msg" id="newsletter-msg" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      
+      <div class="footer-brand">
+        <a href="#home" class="footer-logo">Veil & Vogue</a>
+        <p class="footer-tagline">
+          Modesty meets your personal style. Curating timeless elegance, graceful silhouettes, and modern aesthetic inspiration.
+        </p>
+        <div class="footer-socials">
+          <a href="#" class="social-link" aria-label="Pinterest" title="Pinterest">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0a12 12 0 0 0-4.37 23.18c-.08-.94-.15-2.38.03-3.41.17-.93 1.1-4.7 1.1-4.7s-.28-.56-.28-1.4c0-1.3.75-2.28 1.7-2.28.8 0 1.18.6 1.18 1.33 0 .8-.52 2.02-.78 3.14-.23.95.48 1.72 1.41 1.72 1.7 0 3-2.15 3-4.74 0-2.07-1.4-3.6-3.9-3.6-2.84 0-4.6 2.12-4.6 4.47 0 .8.24 1.38.6 1.83.17.2.19.28.13.51-.06.22-.18.73-.24.96-.08.31-.32.42-.6.3-1.63-.67-2.38-2.47-2.38-4.5 0-3.32 2.8-7.3 8.35-7.3 4.46 0 7.4 3.23 7.4 6.72 0 4.6-2.57 8.04-6.36 8.04-1.28 0-2.48-.69-2.9-1.48l-.8 3.03c-.28 1.09-1.04 2.45-1.55 3.28A12 12 0 1 0 12 0z"/>
+            </svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Instagram" title="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <a href="#" class="social-link" aria-label="TikTok" title="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.29 0 .58.04.85.12V9.4a6.33 6.33 0 0 0-6.6 6.34 6.34 6.34 0 0 0 10.82 4.48 6.3 6.3 0 0 0 1.84-4.51V8.6a8.2 8.2 0 0 0 4.75 1.5V6.69z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-links-group">
+        <h5 class="footer-heading">Navigation</h5>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#style-me">Style Me Studio</a></li>
+          <li><a href="#outfit-ideas">Outfit Ideas</a></li>
+          <li><a href="#about">About Atelier</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-group">
+        <h5 class="footer-heading">Aesthetics</h5>
+        <ul class="footer-links">
+          <li><a href="#card-college-wear">College Minimalist</a></li>
+          <li><a href="#card-casual-chic">Casual Parisian Chic</a></li>
+          <li><a href="#card-old-money">Old Money Cashmere</a></li>
+          <li><a href="#card-ethnic-fusion">Contemporary Ethnic</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-group">
+        <h5 class="footer-heading">Atelier Care</h5>
+        <ul class="footer-links">
+          <li><a href="#style-me">Custom Consult</a></li>
+          <li><a href="#about">Modest Sizing Guide</a></li>
+          <li><a href="#about">Silk & Modal Care</a></li>
+          <li><a href="#about">Contact Stylists</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
+        <p class="copyright">
+          &copy; <span id="current-year">2026</span> Veil & Vogue. Designed with elegance for mindful fashion enthusiasts.
+        </p>
+        <p class="footer-note">Cream • Ivory • Dusty Pink • Chocolate Brown</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Outfit Formula Modal (Pinterest Style Popup) -->
+  <div class="modal-backdrop" id="outfit-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-window">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close formula details">&times;</button>
+      <div class="modal-body" id="modal-body-content">
+        <!-- Dynamically injected via app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Saved Items Drawer Modal -->
+  <div class="saved-drawer" id="saved-drawer" aria-hidden="true">
+    <div class="drawer-header">
+      <div class="drawer-title-group">
+        <h3 class="drawer-title">Your Saved Moodboard</h3>
+        <span class="drawer-subtitle">Personal Pinterest Inspiration</span>
+      </div>
+      <button class="drawer-close-btn" id="drawer-close-btn" aria-label="Close saved moodboard">&times;</button>
+    </div>
+    <div class="drawer-content" id="saved-items-container">
+      <!-- Items dynamically populated -->
+      <div class="empty-saved">
+        <span class="empty-icon">🤍</span>
+        <p>No outfits saved yet.</p>
+        <p class="empty-sub">Click the heart icon on any card or generate looks in the Style Me studio!</p>
+      </div>
+    </div>
+  </div>
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
